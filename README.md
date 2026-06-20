@@ -65,7 +65,7 @@ sortmyscene/
 │   │   ├── pages/          # Home, Events, Admin, Auth, Bookings, BookingSuccess
 │   │   └── services/       # commonAPI, allAPI, serverURL
 
-
+-------------------------------------------------------------------------------------
 
 ├── backend/
 │   ├── controllers/        # userController, eventController, bookingController
