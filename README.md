@@ -9,13 +9,21 @@ A full-stack MERN application for event discovery and ticket booking with real-t
 Features
 
 -Browse and search upcoming events
+
 -Interactive seat grid with real-time status (available / reserved / booked)
+
 -10-minute seat reservation with countdown timer
+
 -Booking confirmation with unique Booking ID
+
 -View past bookings under My Bookings
+
 -JWT-based authentication (login / register)
+
 -Admin dashboard for full event management
+
 -Fully responsive UI
+
 -----------------------------------------------------------------------------------
 Tech Stack
 
