@@ -1,13 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <title>SortMyScene - Event Bookings & Ticket Management</title>
+    <meta name="description" content="Book event tickets, manage reservations, and find the best events in your city with SortMyScene. Easy seat selection and secure bookings." />
+    <meta name="keywords" content="event booking, tickets, reservations, events, seat booking, SortMyScene" />
+    <meta name="author" content="SortMyScene" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    
+    <!-- Open Graph Tags (for social media sharing) -->
+    <meta property="og:title" content="SortMyScene - Book Events & Tickets" />
+    <meta property="og:description" content="Discover and book tickets for amazing events near you. Secure, fast, and easy!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sort-my-scene-frontend.vercel.app/" />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SortMyScene - Book Events & Tickets" />
+    <meta name="twitter:description" content="Discover and book tickets for amazing events near you." />
+    <meta name="twitter:image" content="/og-image.png" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sortmyscene.com" />
+    
+    <!-- Preconnect to external resources (optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://api.sortmyscene.com" />
   </head>
   <body>
+    <!-- Root Element for React -->
     <div id="root"></div>
+    
+    <!-- Main React Application -->
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- No-JS Fallback (optional) -->
+    <noscript>
+      <p style="text-align: center; margin-top: 50px; color: #666; font-family: Arial, sans-serif;">
+        SortMyScene requires JavaScript to run. Please enable JavaScript in your browser.
+      </p>
+    </noscript>
   </body>
 </html>

@@ -36,24 +36,29 @@ function Home() {
         }
     }
 
-    const handleEventSelect = async (event) => {
-        setSelectedEvent(event)
-        setSelectedSeats([])
-        setIsReserved(false)
-        setTimeLeft(600)
-        setModalError(null)
-        try {
-            const response = await singleEvent(event._id);
-            if (response.status === 200 && response.data.seats) {
-                setSeats(response.data.seats);
-            } else {
-                setDefaultSeats()
-            }
-        } catch (err) {
-            console.error("Error fetching event details:", err)
-            setDefaultSeats()
-        }
+   const handleEventSelect = async (event) => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+        navigate("/auth");
+        return;
     }
+    setSelectedEvent(event);
+    setSelectedSeats([]);
+    setIsReserved(false);
+    setTimeLeft(600);
+    setModalError(null);
+    try {
+        const response = await singleEvent(event._id);
+        if (response.status === 200 && response.data.seats) {
+            setSeats(response.data.seats);
+        } else {
+            setDefaultSeats();
+        }
+    } catch (err) {
+        console.error("Error fetching event details:", err);
+        setDefaultSeats();
+    }
+}
 
     const setDefaultSeats = () => {
         const rows = ["A", "B", "C", "D"];
