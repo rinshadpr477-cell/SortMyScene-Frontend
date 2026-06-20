@@ -61,7 +61,7 @@ function Header() {
 
                     <div className="hidden md:flex items-center justify-end flex-1 ml-16">
                         <nav className="flex items-center gap-2">
-                            <Link to="/" className="px-4 py-2 text-fuchsia-500 font-medium hover:text-fuchsia-400 transition duration-200 rounded-lg">
+                            <Link to="/" className="px-4 py-2 text-gray-300 font-medium hover:text-white hover:bg-zinc-900/50 transition duration-200 rounded-lg">
                                 Home
                             </Link>
                             <Link to="/events" className="px-4 py-2 text-gray-300 font-medium hover:text-white hover:bg-zinc-900/50 transition duration-200 rounded-lg">
